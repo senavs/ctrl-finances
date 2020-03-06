@@ -8,10 +8,10 @@ from backend.core.models.payment_type import PaymentTypeModel
 class PaymentTypeResource(Resource):
     response = Response()
 
-    get_parser = Parser('backend/core/schemas/payment_type_get.json')
-    post_parser = Parser('backend/core/schemas/payment_type_post.json')
-    put_parser = Parser('backend/core/schemas/payment_type_put.json')
-    delete_parser = Parser('backend/core/schemas/payment_type_delete.json')
+    get_parser = Parser('backend/core/schemas/payment_type/payment_type_get.json')
+    post_parser = Parser('backend/core/schemas/payment_type/payment_type_post.json')
+    put_parser = Parser('backend/core/schemas/payment_type/payment_type_put.json')
+    delete_parser = Parser('backend/core/schemas/payment_type/payment_type_delete.json')
 
     def get(self):
         request = self.get_parser.parse_args()
