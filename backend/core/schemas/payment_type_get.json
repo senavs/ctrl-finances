@@ -1,0 +1,8 @@
+{
+  "payment type": {
+    "name": "nm_payment",
+    "required": false,
+    "type": "str",
+    "location": "args"
+  }
+}
