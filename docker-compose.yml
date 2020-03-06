@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+
+  backend:
+    image: ctrl-fincances-backend:latest
+    build:
+      context: backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./backend/:/code/backend
+    ports:
+      - 5000:5000
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
