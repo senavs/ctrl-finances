@@ -1,0 +1,8 @@
+{
+  "movement id": {
+    "name": "id",
+    "required": true,
+    "type": "int",
+    "help": "id is required"
+  }
+}

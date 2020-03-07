@@ -10,6 +10,8 @@ class MovementResource(Resource):
 
     get_parser = Parser('backend/core/schemas/movement/movement_get.json')
     post_parser = Parser('backend/core/schemas/movement/movement_post.json')
+    put_parser = Parser('backend/core/schemas/movement/movement_put.json')
+    delete_parser = Parser('backend/core/schemas/movement/movement_delete.json')
 
     def get(self):
         request = self.get_parser.parse_args()
@@ -31,3 +33,27 @@ class MovementResource(Resource):
         movement = MovementModel(**request)
         movement.insert()
         return self.response.success(200, message='movement registered successfully', movement=movement.json())
+
+    def put(self):
+        request = self.put_parser.parse_args()
+
+        movement = MovementModel.find_by_id(request['id'])
+        if not movement:
+            return self.response.error(404, message='movement not found')
+
+        if request['vl_movement']:
+            movement.VL_MOVEMENT = request['vl_movement']
+        if request['in_movement']:
+            movement.IN_MOVEMENT = request['in_movement']
+        movement.insert()
+        return self.response.success(200, message='movement edited successfully', movement=movement.json())
+
+    def delete(self):
+        request = self.delete_parser.parse_args()
+
+        movement = MovementModel.find_by_id(request['id'])
+        if not movement:
+            return self.response.error(404, message='movement not found')
+
+        movement.delete()
+        return self.response.success(200, message='movement deleted successfully')
