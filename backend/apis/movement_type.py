@@ -7,7 +7,7 @@ from backend.core.utils.constants import (SUCCESS_FOUND, ERROR_FOUND, ERROR_ALRE
                                           SUCCESS_CREATED, SUCCESS_EDITED, SUCCESS_DELETED)
 
 
-class MovementResource(Resource):
+class MovementTypeResource(Resource):
     response = Response()
 
     get_parser = Parser('backend/core/schemas/movement_type.json', 'get')
@@ -53,7 +53,7 @@ class MovementResource(Resource):
 
         movement_type.NM_MOVEMENT_TYPE = request['nm_movement_type']
         movement_type.insert()
-        return self.response.success(**SUCCESS_EDITED, request_args=request)
+        return self.response.success(**SUCCESS_EDITED, movement_type=movement_type.json())
 
     def delete(self):
         request = self.delete_parser.parse_args()
