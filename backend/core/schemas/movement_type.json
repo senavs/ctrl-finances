@@ -1,0 +1,40 @@
+{
+  "get": [
+    {
+      "name": "id",
+      "required": false,
+      "type": "str",
+      "help": "id is required"
+    }
+  ],
+  "post": [
+    {
+      "name": "nm_movement_type",
+      "required": true,
+      "type": "str",
+      "help": "nm_movement_type is required"
+    }
+  ],
+  "put": [
+    {
+      "name": "id",
+      "required": true,
+      "type": "int",
+      "help": "id is required"
+    },
+    {
+      "name": "nm_movement_type",
+      "required": true,
+      "type": "str",
+      "help": "nm_movement_type is required"
+    }
+  ],
+  "delete": [
+    {
+      "name": "id",
+      "required": true,
+      "type": "id",
+      "help": "id is required"
+    }
+  ]
+}
