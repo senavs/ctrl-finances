@@ -3,6 +3,7 @@ from backend.core.models.base import QueryBase, StructureBase
 
 
 class MovementTypeModel(StructureBase, QueryBase, db.Model):
+    __tablename__ = 'MOVEMENT_TYPE'
     NM_MOVEMENT_TYPE = db.Column(db.String(128), unique=False, nullable=False)
 
     def __init__(self, nm_movement_type: str):
