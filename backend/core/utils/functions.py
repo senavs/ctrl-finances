@@ -11,3 +11,7 @@ def json_to_dict(file_path: str) -> dict:
 
     with open(file_path, 'r') as file:
         return json.load(file, object_hook=OrderedDict)
+
+
+def make_dict(**kwargs):
+    return dict(**kwargs)
