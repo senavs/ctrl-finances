@@ -1,8 +1,0 @@
-{
-  "payment type": {
-    "name": "nm_payment",
-    "required": true,
-    "type": "str",
-    "help": "nm_payment is required"
-  }
-}

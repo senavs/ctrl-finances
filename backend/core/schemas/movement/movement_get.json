@@ -1,8 +1,0 @@
-{
-  "payment type": {
-    "name": "id",
-    "required": false,
-    "type": "int",
-    "location": "args"
-  }
-}
