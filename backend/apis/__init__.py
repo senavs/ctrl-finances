@@ -1,8 +1,8 @@
 from flask_restful import Api
 
-from backend.apis.base_resource import BaseResource
+from backend.apis.movement_type import MovementResource
 
 api = Api()
 
 # resources
-api.add_resource(BaseResource, '/base')
+api.add_resource(MovementResource, '/movement_type')

@@ -1,8 +1,0 @@
-{
-  "base name": {
-    "name": "base",
-    "required": true,
-    "type": "str",
-    "help": "base help message"
-  }
-}
