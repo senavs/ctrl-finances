@@ -1,0 +1,52 @@
+{
+  "get": [
+    {
+      "name": "nm_username",
+      "required": false,
+      "type": "str",
+      "help": "username is required"
+    }
+  ],
+  "post": [
+    {
+      "name": "nm_username",
+      "required": true,
+      "type": "str",
+      "help": "nm_username is required"
+    },
+    {
+      "name": "nm_password",
+      "required": true,
+      "type": "str",
+      "help": "nm_password is required"
+    }
+  ],
+  "put": [
+    {
+      "name": "nm_username",
+      "required": true,
+      "type": "str",
+      "help": "nm_username is required"
+    },
+    {
+      "name": "nm_password",
+      "required": true,
+      "type": "str",
+      "help": "nm_password is required"
+    },
+    {
+      "name": "new_nm_password",
+      "required": true,
+      "type": "str",
+      "help": "new_nm_password is required"
+    }
+  ],
+  "delete": [
+    {
+      "name": "nm_username",
+      "required": true,
+      "type": "str",
+      "help": "nm_username is required"
+    }
+  ]
+}

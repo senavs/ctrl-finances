@@ -9,3 +9,4 @@ SUCCESS_DELETED = make_dict(http_code=200, message='element deleted successfully
 # error messages
 ERROR_FOUND = make_dict(http_code=404, message='element not found')
 ERROR_ALREADY_REGISTERED = make_dict(http_code=409, message='element already registered')
+ERROR_INVALID_PASSWORD = make_dict(http_code=401, message='invalid password')
