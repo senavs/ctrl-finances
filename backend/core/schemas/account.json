@@ -1,0 +1,52 @@
+{
+  "get": [
+    {
+      "name": "nm_account",
+      "required": false,
+      "type": "str",
+      "help": "nm_account is required"
+    }
+  ],
+  "post": [
+    {
+      "name": "nm_account",
+      "required": true,
+      "type": "str",
+      "help": "nm_account is required"
+    },
+    {
+      "name": "id_user",
+      "required": true,
+      "type": "int",
+      "help": "id_user is required"
+    }
+  ],
+  "put": [
+    {
+      "name": "nm_account",
+      "required": true,
+      "type": "str",
+      "help": "nm_account is required"
+    },
+    {
+      "name": "new_nm_account",
+      "required": true,
+      "type": "str",
+      "help": "new_nm_account is required"
+    },
+    {
+      "name": "id_user",
+      "required": true,
+      "type": "int",
+      "help": "id_user is required"
+    }
+  ],
+  "delete": [
+    {
+      "name": "nm_account",
+      "required": true,
+      "type": "str",
+      "help": "nm_account is required"
+    }
+  ]
+}
