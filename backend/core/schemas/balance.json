@@ -1,0 +1,10 @@
+{
+  "get": [
+    {
+      "name": "nm_account",
+      "required": true,
+      "type": "str",
+      "help": "nm_account is required"
+    }
+  ]
+}
