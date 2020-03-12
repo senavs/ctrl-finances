@@ -1,3 +1,4 @@
+from typing import List
 from datetime import datetime
 
 from backend.core.database import db
@@ -23,8 +24,8 @@ class MovementModel(StructureBase, QueryBase, db.Model):
         self.ID_MOVEMENT_TAG = id_movement_tag
 
     @classmethod
-    def find_by_id_account(cls, id_account: int) -> 'MovementModel':
-        return cls.query.filter_by(ID_ACCOUNT=id_account).first()
+    def find_by_id_account(cls, id_account: int) -> List['MovementModel']:
+        return cls.query.filter_by(ID_ACCOUNT=id_account).all()
 
     @classmethod
     def find_last_by_id_account(cls, id_account: int) -> 'MovementModel':
