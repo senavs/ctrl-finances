@@ -4,7 +4,7 @@
       "name": "nm_username",
       "required": false,
       "type": "str",
-      "help": "username is required"
+      "help": "nm_username is required"
     }
   ],
   "post": [
