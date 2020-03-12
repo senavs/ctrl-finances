@@ -33,7 +33,7 @@
     {
       "name": "id",
       "required": true,
-      "type": "id",
+      "type": "str",
       "help": "id is required"
     }
   ]
