@@ -3,7 +3,7 @@
     {
       "name": "id",
       "required": false,
-      "type": "str",
+      "type": "int",
       "help": "id is required"
     }
   ],
@@ -33,7 +33,7 @@
     {
       "name": "id",
       "required": true,
-      "type": "str",
+      "type": "int",
       "help": "id is required"
     }
   ]

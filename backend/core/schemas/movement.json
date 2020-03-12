@@ -1,0 +1,76 @@
+{
+  "get": [
+    {
+      "name": "id",
+      "required": false,
+      "type": "int",
+      "help": "id is required"
+    }
+  ],
+  "post": [
+    {
+      "name": "id_account",
+      "required": true,
+      "type": "int",
+      "help": "id_account is required"
+    },
+    {
+      "name": "vl_movement",
+      "required": true,
+      "type": "float",
+      "help": "vl_movement is required"
+    },
+    {
+      "name": "id_movement_type",
+      "required": true,
+      "type": "int",
+      "help": "id_movement_type is required"
+    },
+    {
+      "name": "id_movement_tag",
+      "required": true,
+      "type": "int",
+      "help": "id_movement_tag is required"
+    }
+  ],
+  "put": [
+    {
+      "name": "id",
+      "required": true,
+      "type": "int",
+      "help": "id is required"
+    },
+    {
+      "name": "id_account",
+      "required": false,
+      "type": "int",
+      "help": "id_account is required"
+    },
+    {
+      "name": "id_movement_type",
+      "required": false,
+      "type": "int",
+      "help": "id_movement_type is required"
+    },
+    {
+      "name": "id_movement_tag",
+      "required": false,
+      "type": "int",
+      "help": "id_movement_tag is required"
+    },
+    {
+      "name": "vl_movement",
+      "required": false,
+      "type": "float",
+      "help": "vl_movement is required"
+    }
+  ],
+  "delete": [
+    {
+      "name": "id",
+      "required": true,
+      "type": "str",
+      "help": "id is required"
+    }
+  ]
+}
